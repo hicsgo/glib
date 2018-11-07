@@ -2,7 +2,8 @@ package glib
 
 import (
 	"errors"
-	"github.com/lunny/log"
+	"fmt"
+	"strings"
 )
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -30,9 +31,38 @@ func Capture2(fnSource func(), fnError func(interface{})) (er error) {
 func Capture(fnSource func(...interface{})) {
 	defer func() {
 		if err := recover(); err != nil {
-			log.Error("invoke func panic error:", err)
+			fmt.Sprintf("invoke func panic error:%v", err)
 		}
 	}()
 	fnSource()
 }
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * 用指定的字符串链接字符串切片
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func StringSliceToString(stringSlice []string, args ...string) string {
+	result := ""
+
+	if len(stringSlice) == 0 {
+		return result
+	}
+
+	joinString := ","
+	if len(args) == 1 {
+		joinString = args[0]
+	}
+
+	if len(stringSlice) == 1 {
+		result = strings.Join(stringSlice, "")
+	} else {
+		for _, v := range stringSlice {
+			if len(result) == 0 {
+				result = result + v
+			} else {
+				result = result + joinString + v
+			}
+		}
+	}
+
+	return result
+}
