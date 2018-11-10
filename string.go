@@ -1,0 +1,60 @@
+package glib
+
+import (
+	"strings"
+)
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * 转换格式 eg:将user_id转换成UserId
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func ConvertName(mysqlName string) string {
+	sqlNames := StringToStringSlice(mysqlName, "_")
+	goName := ""
+	for _, sqlName := range sqlNames {
+		goName += FirstToUpper(sqlName)
+	}
+	return goName
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * 用指定的字符串分隔源字符串为字符串切片
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func StringToStringSlice(sourceString string, args ...string) []string {
+	result := make([]string, 0)
+
+	if len(sourceString) == 0 {
+		return result
+	}
+
+	splitString := ","
+	if len(args) == 1 {
+		splitString = args[0]
+	}
+
+	stringSlice := strings.Split(sourceString, splitString)
+	for _, v := range stringSlice {
+		if v != "" {
+			result = append(result, v)
+		}
+	}
+
+	return result
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * 将字符串首字母大写
+ * eg:(user_id转换成User_id)
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func FirstToUpper(str string) string {
+	var upperStr string
+	vv := []rune(str)
+	for i := 0; i < len(vv); i++ {
+		if i == 0 {
+			vv[i] -= 32
+			upperStr += string(vv[i]) // + string(vv[i+1])
+		} else {
+			upperStr += string(vv[i])
+		}
+	}
+	return upperStr
+}
