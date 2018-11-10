@@ -2,6 +2,8 @@ package glib
 
 import (
 	"strings"
+	"reflect"
+	"time"
 )
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -57,4 +59,53 @@ func FirstToUpper(str string) string {
 		}
 	}
 	return upperStr
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * 根据mysql类型返回go对应的类型
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func GoTypeByMysqlType(mysqlTye string) interface{} {
+	var goType interface{}
+	switch mysqlTye {
+	case "bool":
+		goType = reflect.Bool
+		break
+	case "varchar":
+		goType = reflect.String
+		break
+	case "text":
+		goType = reflect.String
+		break
+	case "longtext":
+		goType = reflect.String
+		break
+	case "char":
+		goType = reflect.String
+		break
+	case "date":
+		goType = reflect.Int32
+		break
+	case "datetime":
+		goType = reflect.Struct
+		break
+	case "time":
+		goType = reflect.Struct
+		break
+	case "tinyint":
+		goType = reflect.Int64
+		break
+	case "smallint":
+		goType = reflect.Int64
+		break
+	case "decimal":
+		goType = reflect.Float64
+		break
+	case "int":
+		goType = reflect.Int64
+		break
+	default:
+		goType = reflect.String
+		break
+	}
+	return goType
 }
