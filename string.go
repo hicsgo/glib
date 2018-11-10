@@ -60,6 +60,24 @@ func FirstToUpper(str string) string {
 	return upperStr
 }
 
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * 将字符串首字母小写 eg:(User_id转换成user_id)
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func FirstToLower(str string) string {
+	var upperStr string
+	vv := []rune(str)
+	for i := 0; i < len(vv); i++ {
+		if i == 0 {
+			vv[i] += 32
+			upperStr += string(vv[i]) // + string(vv[i+1])
+		} else {
+			upperStr += string(vv[i])
+		}
+	}
+	return upperStr
+}
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  * 根据mysql类型返回go对应的类型
  * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
