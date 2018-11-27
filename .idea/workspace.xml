@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88bc7053-cfee-4c3b-bc08-5d15fafdda58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/string.go" afterPath="$PROJECT_DIR$/string.go" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/glib.go" afterPath="$PROJECT_DIR$/glib.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,37 +13,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="glib.go" pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name="glib.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/glib.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="360">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding>
-                <element signature="e#14#52#0" expanded="true" />
+                <element signature="e#14#69#0" expanded="true" />
+                <element signature="e#71#270#0" expanded="false" />
+                <element signature="n#!!block;n#Capture2#0" expanded="false" />
+                <element signature="e#356#525#0" expanded="false" />
+                <element signature="e#392#522#0" expanded="false" />
+                <element signature="e#443#462#0" expanded="false" />
+                <element signature="e#468#518#0" expanded="false" />
+                <element signature="e#555#739#0" expanded="false" />
+                <element signature="n#!!block;n#Capture#0" expanded="false" />
+                <element signature="e#800#894#0" expanded="false" />
+                <element signature="e#836#891#0" expanded="false" />
+                <element signature="e#912#1100#0" expanded="false" />
+                <element signature="n#!!block;n#StringSliceToString#0" expanded="false" />
+                <element signature="e#1214#1234#0" expanded="false" />
+                <element signature="e#1274#1301#0" expanded="false" />
+                <element signature="e#1329#1374#0" expanded="false" />
+                <element signature="e#1380#1525#0" expanded="false" />
+                <element signature="e#1414#1522#0" expanded="false" />
+                <element signature="e#1439#1469#0" expanded="false" />
+                <element signature="e#1475#1518#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="string.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/string.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-              <folding>
-                <element signature="e#14#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="type.go" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/reflect/type.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="249" column="5" lean-forward="false" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -68,8 +66,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/glib.go" />
         <option value="$PROJECT_DIR$/string.go" />
+        <option value="$PROJECT_DIR$/glib.go" />
       </list>
     </option>
   </component>
@@ -116,6 +114,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,10 +126,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,12 +269,13 @@
       <updated>1541154784796</updated>
       <workItem from="1541154786502" duration="1375000" />
       <workItem from="1541584046791" duration="955000" />
-      <workItem from="1541841730394" duration="1960000" />
+      <workItem from="1541841730394" duration="3781000" />
+      <workItem from="1543289459408" duration="86000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4290000" />
+    <option name="totallyTimeSpent" value="6197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="706" extended-state="0" />
@@ -326,7 +325,26 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#52#0" expanded="true" />
+            <element signature="e#14#69#0" expanded="true" />
+            <element signature="e#71#270#0" expanded="false" />
+            <element signature="n#!!block;n#Capture2#0" expanded="false" />
+            <element signature="e#356#525#0" expanded="false" />
+            <element signature="e#392#522#0" expanded="false" />
+            <element signature="e#443#462#0" expanded="false" />
+            <element signature="e#468#518#0" expanded="false" />
+            <element signature="e#555#739#0" expanded="false" />
+            <element signature="n#!!block;n#Capture#0" expanded="false" />
+            <element signature="e#800#894#0" expanded="false" />
+            <element signature="e#836#891#0" expanded="false" />
+            <element signature="e#912#1100#0" expanded="false" />
+            <element signature="n#!!block;n#StringSliceToString#0" expanded="false" />
+            <element signature="e#1214#1234#0" expanded="false" />
+            <element signature="e#1274#1301#0" expanded="false" />
+            <element signature="e#1329#1374#0" expanded="false" />
+            <element signature="e#1380#1525#0" expanded="false" />
+            <element signature="e#1414#1522#0" expanded="false" />
+            <element signature="e#1439#1469#0" expanded="false" />
+            <element signature="e#1475#1518#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -336,7 +354,26 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#52#0" expanded="true" />
+            <element signature="e#14#69#0" expanded="true" />
+            <element signature="e#71#270#0" expanded="false" />
+            <element signature="n#!!block;n#Capture2#0" expanded="false" />
+            <element signature="e#356#525#0" expanded="false" />
+            <element signature="e#392#522#0" expanded="false" />
+            <element signature="e#443#462#0" expanded="false" />
+            <element signature="e#468#518#0" expanded="false" />
+            <element signature="e#555#739#0" expanded="false" />
+            <element signature="n#!!block;n#Capture#0" expanded="false" />
+            <element signature="e#800#894#0" expanded="false" />
+            <element signature="e#836#891#0" expanded="false" />
+            <element signature="e#912#1100#0" expanded="false" />
+            <element signature="n#!!block;n#StringSliceToString#0" expanded="false" />
+            <element signature="e#1214#1234#0" expanded="false" />
+            <element signature="e#1274#1301#0" expanded="false" />
+            <element signature="e#1329#1374#0" expanded="false" />
+            <element signature="e#1380#1525#0" expanded="false" />
+            <element signature="e#1414#1522#0" expanded="false" />
+            <element signature="e#1439#1469#0" expanded="false" />
+            <element signature="e#1475#1518#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -345,7 +382,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="115" column="5" lean-forward="false" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/string.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -353,26 +396,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="249" column="5" lean-forward="false" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/glib.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        <state relative-caret-position="360">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <element signature="e#14#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/string.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#46#0" expanded="true" />
+            <element signature="e#14#69#0" expanded="true" />
+            <element signature="e#71#270#0" expanded="false" />
+            <element signature="n#!!block;n#Capture2#0" expanded="false" />
+            <element signature="e#356#525#0" expanded="false" />
+            <element signature="e#392#522#0" expanded="false" />
+            <element signature="e#443#462#0" expanded="false" />
+            <element signature="e#468#518#0" expanded="false" />
+            <element signature="e#555#739#0" expanded="false" />
+            <element signature="n#!!block;n#Capture#0" expanded="false" />
+            <element signature="e#800#894#0" expanded="false" />
+            <element signature="e#836#891#0" expanded="false" />
+            <element signature="e#912#1100#0" expanded="false" />
+            <element signature="n#!!block;n#StringSliceToString#0" expanded="false" />
+            <element signature="e#1214#1234#0" expanded="false" />
+            <element signature="e#1274#1301#0" expanded="false" />
+            <element signature="e#1329#1374#0" expanded="false" />
+            <element signature="e#1380#1525#0" expanded="false" />
+            <element signature="e#1414#1522#0" expanded="false" />
+            <element signature="e#1439#1469#0" expanded="false" />
+            <element signature="e#1475#1518#0" expanded="false" />
           </folding>
         </state>
       </provider>

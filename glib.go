@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"strings"
+	"encoding/json"
 )
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -65,4 +66,12 @@ func StringSliceToString(stringSlice []string, args ...string) string {
 	}
 
 	return result
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * Json字符串转换成对象
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func FromJson(jsonString string, object interface{}) error {
+	bytesData := []byte(jsonString)
+	return json.Unmarshal(bytesData, object)
 }
