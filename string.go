@@ -126,3 +126,18 @@ func GoTypeByMysqlType(mysqlTye string) interface{} {
 	}
 	return goType
 }
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * 根据bitString返回bool Slice
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func BitStringToBoolSlice(str string) []bool {
+	s := make([]bool, 0, len(str)*8)
+	for i := 0; i < len(str); i++ {
+		for bit := 7; bit >= 0; bit-- {
+			set := (str[i]>>uint(bit))&1 == 1
+			s = append(s, set)
+		}
+	}
+	return s
+}
+
