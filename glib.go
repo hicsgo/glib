@@ -75,3 +75,14 @@ func FromJson(jsonString string, object interface{}) error {
 	bytesData := []byte(jsonString)
 	return json.Unmarshal(bytesData, object)
 }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * 对象转换成Json字符串
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func ToJson(object interface{}) (string, error) {
+	v, err := json.Marshal(object)
+	if err != nil {
+		return "", err
+	}
+
+	return string(v), nil
+}
