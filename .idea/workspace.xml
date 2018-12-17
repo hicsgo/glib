@@ -14,7 +14,7 @@
       <file leaf-file-name="glib.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/glib.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
+            <state relative-caret-position="525">
               <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
               <folding>
                 <element signature="e#14#69#0" expanded="true" />
@@ -42,8 +42,8 @@
       <file leaf-file-name="datetime.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datetime.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1697">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="568">
+              <caret line="675" column="20" lean-forward="true" selection-start-line="675" selection-start-column="20" selection-end-line="675" selection-end-column="20" />
               <folding>
                 <element signature="e#14#61#0" expanded="true" />
               </folding>
@@ -55,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/string.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1995">
-              <caret line="133" column="36" lean-forward="true" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
+              <caret line="133" column="36" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
               <folding>
                 <element signature="e#14#46#0" expanded="true" />
               </folding>
@@ -86,6 +86,7 @@
       <list>
         <option value="$PROJECT_DIR$/glib.go" />
         <option value="$PROJECT_DIR$/string.go" />
+        <option value="$PROJECT_DIR$/datetime.go" />
       </list>
     </option>
   </component>
@@ -426,9 +427,19 @@
     </entry>
     <entry file="file:///usr/local/go/src/time/time.go" />
     <entry file="file:///usr/local/go/src/reflect/type.go" />
+    <entry file="file://$PROJECT_DIR$/string.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="133" column="36" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
+          <folding>
+            <element signature="e#14#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/glib.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
+        <state relative-caret-position="525">
           <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
           <folding>
             <element signature="e#14#69#0" expanded="true" />
@@ -452,20 +463,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/string.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="133" column="36" lean-forward="true" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
-          <folding>
-            <element signature="e#14#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datetime.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1697">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="568">
+          <caret line="675" column="20" lean-forward="true" selection-start-line="675" selection-start-column="20" selection-end-line="675" selection-end-column="20" />
           <folding>
             <element signature="e#14#61#0" expanded="true" />
           </folding>

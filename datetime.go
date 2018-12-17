@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"github.com/hicsgo/glib"
 )
 
 /* ================================================================================
@@ -667,8 +666,8 @@ func StringToTime(timeString string, args ...interface{}) (time.Time, error) {
  * 获取两个时间相差多少天
  * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 func TimeDifferDay(firstTime, SecondTime time.Time) int64 {
-	firstMinTimeSpan := glib.GetMinDateTimestamp(firstTime)
-	secondMinTimeSpan := glib.GetMinDateTimestamp(SecondTime)
+	firstMinTimeSpan := GetMinDateTimestamp(firstTime)
+	secondMinTimeSpan := GetMinDateTimestamp(SecondTime)
 	differDay := (firstMinTimeSpan - secondMinTimeSpan) / (24 * 60 * 60)
 	if differDay < 0 {
 		return 0
