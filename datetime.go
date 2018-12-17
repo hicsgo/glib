@@ -669,8 +669,5 @@ func TimeDifferDay(firstTime, SecondTime time.Time) int64 {
 	firstMinTimeSpan := GetMinDateTimestamp(firstTime)
 	secondMinTimeSpan := GetMinDateTimestamp(SecondTime)
 	differDay := (firstMinTimeSpan - secondMinTimeSpan) / (24 * 60 * 60)
-	if differDay < 0 {
-		return 0
-	}
 	return differDay
 }
