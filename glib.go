@@ -39,6 +39,18 @@ func Capture(fnSource func(...interface{})) {
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * 捕获函数执行时的异常
+ * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+func Capture3(fnSource func()) {
+	defer func() {
+		if err := recover(); err != nil {
+			fmt.Sprintf("invoke func panic error:%v", err)
+		}
+	}()
+	fnSource()
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  * 用指定的字符串链接字符串切片
  * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 func StringSliceToString(stringSlice []string, args ...string) string {
@@ -75,6 +87,7 @@ func FromJson(jsonString string, object interface{}) error {
 	bytesData := []byte(jsonString)
 	return json.Unmarshal(bytesData, object)
 }
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  * 对象转换成Json字符串
  * ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
