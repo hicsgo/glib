@@ -79,7 +79,7 @@ func HttpPost(url, params string, args ...string) (string, error) {
 
 	return string(body), nil
 }
-func HttpPostJson(url string, params interface{}, args ...string) (string, error) {
+func HttpPostJson(url string, params interface{}, args ...string) ([]byte, error) {
 	cookie := ""
 	if len(args) == 1 {
 		cookie = args[0]
@@ -87,11 +87,11 @@ func HttpPostJson(url string, params interface{}, args ...string) (string, error
 
 	requestJson, err := json.Marshal(params)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 	req, err := http.NewRequest("POST", url, bytes.NewReader(requestJson))
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 
 	req.Header.Set("Content-Type", "application/json; charset=utf-8")
@@ -103,16 +103,16 @@ func HttpPostJson(url string, params interface{}, args ...string) (string, error
 	httpClient := &http.Client{}
 	resp, err := httpClient.Do(req)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 	defer resp.Body.Close()
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 
-	return string(body), nil
+	return body, nil
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
